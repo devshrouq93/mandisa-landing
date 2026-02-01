@@ -1,0 +1,30 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/maps";
+ 
+$default: #D3B08A;
+$light: #faf7f2; 
+$black: #000000;
+$dark:#333333;
+
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "default": $default,
+    "light": $light,
+    "black": $black ,
+    "dark": $dark
+  )
+);
+
+@each $name, $value in $theme-colors {
+  .text-#{$name} {
+    color: #{$value} !important;
+  }
+  .bg-#{$name} {
+    background-color: #{$value} !important;
+  }
+  .bg-#{name} {
+    background-color: #{$value} !important;
+  }
+}

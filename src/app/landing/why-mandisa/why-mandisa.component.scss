@@ -1,0 +1,35 @@
+@import '../../../assets/variables.scss';
+.content {
+    border:1px solid $default;
+    border-radius:15px  0px;
+    .content-img {
+        margin: 15px auto;
+        height: 55px;
+        width: 55px;
+        background-color:$default; 
+        border-radius: 50%;  
+        position: relative;
+        img {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            filter: brightness(0) saturate(100%) invert(92%) sepia(22%) saturate(472%) hue-rotate(302deg) brightness(110%) contrast(94%);
+        }
+    }
+
+    .content-paragraph {
+        font-weight: 500;
+    }
+
+    &:hover {
+    background-color: $default;
+       .content-img {
+            background-color:  #f9f4ee;
+            img {
+              filter: brightness(0) saturate(100%) invert(73%) sepia(45%) saturate(240%) hue-rotate(351deg) brightness(91%) contrast(92%);
+            }
+        }
+    }
+}
+
+ 

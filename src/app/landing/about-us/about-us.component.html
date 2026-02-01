@@ -1,0 +1,37 @@
+<section class="about-us mt-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-12 mb-5">
+                <div class="left-side">  
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 col-12">
+                            <div class="about-us"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 mb-5 text-center align-self-center">
+                <div class="right-side">
+                    <div class="row">
+                        <div class="col-12 mb-5">
+                            <h1>About Our Iconic Products</h1>
+                        </div>
+                        <div class="col-12 text-start">
+                            <ul class="row list-unstyled p-0 m-0">
+                                @for(item of data ; track item) { 
+                                    <li class="col-md-6 col-12 mb-3">
+                                    <h5 class="fw-semibold"> {{item.title}} </h5>
+                                    <p> {{item.description}} </p>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                        <!-- <div class="col-12 text-start">
+                           <a class="mx-3 text-decoration-none text-black"> See more</a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,23 @@
+<section class="why-mandisa mb-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center mb-4">
+                <h1>Why Mandisa</h1>
+                <p class="fs-5">We provide the best B2B experience to empower our partners with our full range of organic and natural products</p>
+            </div>
+            @for(item of data ; track item) {
+              <div class="col-md-3 col-6 my-3">
+                <div class="content text-center">
+                   <div class="content-img">
+                      <img [src]="item.imagePath" alt="item.imagePath" height="30px" width="auto">
+                   </div>
+                   <div class="content-paragraph">
+                      <p class="fs-5">{{item.title}}</p>
+                   </div>
+                </div>
+              </div>
+            }
+        </div>
+    </div>
+</section>
+ 

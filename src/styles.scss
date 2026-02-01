@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "./assets/variables.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/crimsontext/v19/wlp2gwHKFkZgtmSR3NB0oRJfYAhTM_I.woff2') format('woff2');
+}
+ 
+* {
+  font-family: 'Crimson Text', serif;
+}
+
+html , body {
+  margin: 0;
+  background-color:$light;
+}
+
+ 

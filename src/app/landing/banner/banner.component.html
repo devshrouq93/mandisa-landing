@@ -1,0 +1,37 @@
+<swiper
+  [slidesPerView]="1"
+  [spaceBetween]="10"
+  [navigation]="true"
+  [pagination]="{ clickable: true }"
+  [loop]="true"
+  class="mySwiper"> 
+  <ng-template swiperSlide>
+    <div class="item">
+       <img src="https://cosma.wpengine.com/wp-content/uploads/2021/03/banner.jpg" alt="Banner" class="banner"/>
+       <div class="overlay">
+            <div class="content">
+                <p class="sub-title">The Mystic Wonders Of Egypt</p>
+                <h1 class="title mb-5"> Finely Crafted Natural Products From Egypt </h1>
+                
+               <ul class="list-unstyled m-0 p-0 feature-list">
+                    <li>
+                        <img src="https://cosma.wpengine.com/wp-content/uploads/2021/07/icn3.png" alt="" height="40px" width="40px">
+                        <span>Vegan product</span>
+                    </li>
+
+                    <li>
+                        <img src="https://cosma.wpengine.com/wp-content/uploads/2021/07/icn2.png" alt="" height="40px" width="40px">
+                        <span>Hand made</span>
+                    </li>
+
+                    <li>
+                        <img src="https://cosma.wpengine.com/wp-content/uploads/2021/07/icn1.png" alt="" height="40px" width="40px">
+                        <span>Paraben free</span>
+                    </li>
+                </ul>
+            </div>
+       </div>
+    </div>
+  </ng-template>
+</swiper>
+  
