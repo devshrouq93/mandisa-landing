@@ -57,9 +57,11 @@
 ::ng-deep {
   .right-side { 
     &:hover {
-      .swiper-button-next, .swiper-button-prev {
-        display: block !important;
-        color: $black !important;
+      .product-swiper { 
+        .swiper-button-next, .swiper-button-prev {
+          display: block !important;
+          color: $black !important;
+        }
       }
     }
   }

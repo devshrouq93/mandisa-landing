@@ -19,16 +19,31 @@
 
     .content-paragraph {
         font-weight: 500;
+        @media (max-width: 425px) {
+            p { 
+              font-size: 1.1rem !important;
+            }
+        }
+
+        
     }
 
     &:hover {
-    background-color: $default;
+        background-color: $default;
        .content-img {
             background-color:  #f9f4ee;
             img {
               filter: brightness(0) saturate(100%) invert(73%) sepia(45%) saturate(240%) hue-rotate(351deg) brightness(91%) contrast(92%);
             }
         }
+    }
+
+    @media (max-width: 800px) {
+        padding: 8px !important;
+    }
+
+    @media (max-width: 375px) {
+        padding: 5px !important;    
     }
 }
 
