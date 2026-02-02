@@ -30,3 +30,11 @@
       }
     }
 }
+
+img {
+   filter: brightness(0) saturate(100%) invert(79%) sepia(37%) saturate(302%) hue-rotate(349deg) brightness(86%) contrast(92%);
+   vertical-align:sub;
+   margin-right: 5px;
+   cursor: pointer;
+
+}
