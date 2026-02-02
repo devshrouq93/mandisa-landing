@@ -1,0 +1,32 @@
+<section class="clients">
+ <div class="container">
+    <div class="row">
+        <div class="col-12 text-center mb-4">  
+          <h1> Partners Of Success</h1> 
+          <p class="fs-5">We build strong partnerships that drive lasting success.</p>
+        </div>
+        <div class="col-12">
+           <swiper
+            [slidesPerView]="7"
+            [spaceBetween]="8"
+            [loop]="true"
+            [navigation]="true"
+            [pagination]="{ clickable: true }"
+            [breakpoints]="breakpoints"
+            class="mySwiper">
+                @for(item of our_clients ; track item) { 
+                    <ng-template swiperSlide>
+                        <div class="client-item">
+                            <img 
+                            [src]="item.imagePath" 
+                            [alt]="item.imagePath"  
+                            class="client-logo"
+                            />
+                        </div>
+                    </ng-template>
+                }
+            </swiper>
+        </div>
+    </div>
+ </div>
+</section>

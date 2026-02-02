@@ -1,0 +1,45 @@
+@import '../../../assets/variables.scss';
+::ng-deep {
+  .clients { 
+    &:hover {
+        .swiper-button-next, .swiper-button-prev {
+            display: block !important;
+            color: $black !important;
+        }
+    }
+        
+    .swiper-pagination {
+        display: none !important;
+    }
+
+    // .swiper-slide {
+    //     width: 179px !important;
+    // }
+  }
+}
+
+.clients {
+  padding: 2rem 0;
+  
+  .client-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .client-logo {
+    width: 100px;          /* العرض المطلوب */
+    height: 100px;         /* الارتفاع المطلوب */
+    border-radius: 50%;    /* يجعل الصورة دائرية */
+    object-fit: cover;     /* لضبط الصورة داخل الدائرة */
+    border: 3px solid #f0f0f0; /* إطار اختياري */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل اختياري */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .client-logo:hover {
+    transform: scale(1.05);      /* تكبير بسيط عند التمرير */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+}

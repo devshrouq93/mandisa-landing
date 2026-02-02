@@ -1,0 +1,43 @@
+@import '../../../assets/variables.scss';
+
+.footer {
+    background-color: $black;
+    padding: 50px;
+    @media (max-width: 500px) { padding: 20px;}
+    ul {
+        li {
+            color: $light;
+            line-height: 40px;
+            font-size: 1.1rem;
+            a {
+                color: $light;
+                cursor: pointer;
+            }
+
+            &:hover {
+                color:$default;
+                a {
+                    color:$default;
+                }
+            }
+
+             @media (max-width: 800px) { font-size: 0.92rem;}
+        }
+    }
+
+    .copyrights {
+      border-top: 1px solid #3e3636;
+
+      p {
+       color: #707070;
+      }
+    }
+}
+
+img {
+   filter: brightness(0) saturate(100%) invert(79%) sepia(37%) saturate(302%) hue-rotate(349deg) brightness(86%) contrast(92%);
+   vertical-align:sub;
+   margin-right: 5px;
+   cursor: pointer;
+
+}

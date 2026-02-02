@@ -1,0 +1,120 @@
+@import '../../../assets/variables.scss';
+
+.delivery {
+  position: relative;
+  background-image: url('https://mandisanaturals.com/wp-content/uploads/2020/10/mandisa-naturals-featured.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 80vh;
+}
+
+.delivery .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.content {
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  max-width: 70%;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+
+  h1,
+  p {
+    color: $black;
+  }
+}
+
+.delivery h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.delivery p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .delivery {
+    height: 70vh;
+  }
+
+  .content {
+    max-width: 80%;
+  }
+
+  .delivery h1 {
+    font-size: 2.5rem;
+  }
+
+  .delivery p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .delivery {
+    height: 65vh;
+  }
+
+  .content {
+    max-width: 90%;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .delivery h1 {
+    font-size: 2rem;
+  }
+
+  .delivery p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .delivery {
+    height: 60vh;
+  }
+
+  .content {
+    padding: 1rem 1.25rem;
+    border-radius: 12px;
+  }
+
+  .delivery h1 {
+    font-size: 1.6rem;
+  }
+
+  .delivery p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .content {
+    padding: 0.75rem 1rem;
+  }
+
+  .delivery h1 {
+    font-size: 1.4rem;
+  }
+
+  .delivery p {
+    font-size: 0.85rem;
+  }
+}

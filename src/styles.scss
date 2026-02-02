@@ -1,0 +1,47 @@
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "./assets/variables.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/crimsontext/v19/wlp2gwHKFkZgtmSR3NB0oRJfYAhTM_I.woff2') format('woff2');
+}
+ 
+* {
+  font-family: 'Crimson Text', serif;
+  scrollbar-width: thin;  
+  scrollbar-color: $default $light; 
+}
+
+ 
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: $light;  
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $default;  
+  border-radius: 6px;
+  border: 3px solid $light;  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $default; 
+}
+ 
+
+html , body {
+  margin: 0;
+  background-color:$light;
+}
+
+ 
