@@ -6,7 +6,7 @@ import { Component, HostListener } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+  styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
   isScrolled = false;
@@ -19,9 +19,19 @@ export class NavbarComponent {
 
   toggleMobileMenu() {
     this.mobileMenuOpen = !this.mobileMenuOpen;
+    this.updateBodyScroll();
   }
 
   closeMobileMenu() {
     this.mobileMenuOpen = false;
+    this.updateBodyScroll();
+  }
+
+  private updateBodyScroll() {
+    if (this.mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
   }
 }
