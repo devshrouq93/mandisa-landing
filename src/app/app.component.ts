@@ -18,8 +18,8 @@ export class AppComponent {
     this.spinnerService.show();
     setTimeout(() => {
       this.spinnerService.hide();
-    }, 2000);
+    },3000);
   }
+
   title = 'mandisa';
-  
 }
